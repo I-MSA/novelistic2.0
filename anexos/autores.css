@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gantari', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* globales */
+body {
+    background-color: var(--grey);
+}
+
+a {
+    color: var(--black);
+}
+
+:root {
+    --grey: #D1D2D9;
+    --black: #000;
+    --white: #fff;
+}
+
+header {
+    width: 100%;
+    background-color: #6545f1;
+}
+
+.inicio {
+    display: flex;
+    padding: 20px;
+}
+
+.inicio li {
+    margin: 0 100px;
+    box-sizing: border-box;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.inicio li:hover {
+    box-shadow: 0px 0px 5px 0 orange;
+}
+
+.inicio li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+/* caja madre */
+.container {
+    box-shadow: 0px 0px 5px 0 #000;
+    width: 90%;
+    margin: 10px auto;
+    background-color: var(--white);
+    display: flex;
+}
+
+/* es la info del autor */
+.info-autor {
+    /* border: 1px solid red; */
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0 #000;
+}
+
+.info-autor ul {
+    width: 200px;
+}
+
+.info-autor li {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+/* aca es donde esta la configuracion del texto */
+.cuento {
+    line-height: 1.6;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.4em;
+    /* border: 1px solid blue; */
+}
+
+.cuento h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    padding: 20px 0;
+}
+
+@media (max-width: 840px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuento {
+        width: 90%;
+        padding: none;
+        font-size: 1em;
+        /* border: 1px solid blue; */
+    }
+}
